@@ -4,4 +4,5 @@ This is a repository with all my scripts in Python
 
 ### Scripts
 
-- Password Generator 13/12/2020
+- Password Generator **13/12/2020**
+- Wifi Password Extractor **13/12/2020**
