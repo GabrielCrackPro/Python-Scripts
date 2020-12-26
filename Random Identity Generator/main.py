@@ -16,7 +16,7 @@ possible_heigth = random.randint(150,190) / 100
 possible_relationship = ['Single','Married','Not interested']
 relationship_interests = ['Boys','Girls']
 class Person:
-    name = random.choice(possible_male_names)
+    name = random.choice(possible_male_names or possible_female_names)
     age = possible_ages
     birth_year = actual_year - age
     job = random.choice(possible_jobs)
