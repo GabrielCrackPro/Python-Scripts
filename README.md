@@ -8,3 +8,7 @@ This is a repository with all my scripts in Python
 - Wifi Password Extractor **13/12/2020**
 - Random Identity Generator **16/12/2020**
 - Number Guessing Game **20/12/2020**
+
+- Practical Exercises
+  1. Hi **26/12/2020**
+  2. For practice **26/12/2020**
