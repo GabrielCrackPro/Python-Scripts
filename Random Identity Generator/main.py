@@ -37,7 +37,6 @@ cars = open('cars.txt','r')
 car_list = []
 for line in cars:
     car_list.append(line.strip('\n').split('\n'))
-
 possible_male_names = random.choice(male_names_list)
 possible_female_names = random.choice(female_names_list)
 possible_ages = random.randint(10,99)
@@ -58,30 +57,12 @@ class Person:
     job = random.choice(possible_jobs)
     email = name.lower() + str(birth_year) + random.choice(mail_domains)
     country = random.choice(possible_countries)
-    phone = ''
+    phone = phone_numbers
     weight = str(possible_weight) + 'kg'
     heigth = str(possible_heigth) + 'm'
     relationship = random.choice(possible_relationship)
     interested = random.choice(relationship_interests)
     car = random.choice(possible_car_makes)
-
-if Person.country == possible_countries[0] or Person.country == possible_countries[2]:
-    Person.phone = possible_phone_prefixes[0] + phone_numbers
-else:
-    if Person.country == possible_countries[1]:
-        Person.phone = possible_phone_prefixes[1] + phone_numbers
-    else:
-        if Person.country == possible_countries[3]:
-            Person.phone = possible_phone_prefixes[3] + phone_numbers
-        else:
-            if Person.country == possible_countries[4]:
-                Person.phone = possible_phone_prefixes[4] + phone_numbers
-            else:
-                if Person.country == possible_countries[5]:
-                    Person.phone = possible_phone_prefixes[5] + phone_numbers
-                else:
-                    Person.phone = phone_numbers
-
 if Person.relationship == possible_relationship[2]:
    Person.interested = 'Unkwon'
 
