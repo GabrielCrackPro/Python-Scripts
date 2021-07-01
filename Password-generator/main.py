@@ -16,7 +16,9 @@ if nums:
     all += digits
 if syms:
     all += symbols
-
+print(##############################)
+print(------Password Generator------)
+print(##############################)
 print('How long you want your password?')
 length = int(input())
 print('How many password do you want to generate?')
