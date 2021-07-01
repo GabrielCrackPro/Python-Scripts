@@ -16,14 +16,15 @@ if nums:
     all += digits
 if syms:
     all += symbols
-print(##############################)
-print(------Password Generator------)
-print(##############################)
-print('How long you want your password?')
+print('############################')
+print('#----Password Generator----#')
+print('############################')
+print('\n')
+print('1) How long you want your password?')
 length = int(input())
-print('How many password do you want to generate?')
+print('2) How many password do you want to generate?')
 passwords = int(input())
 for x in range(passwords):
     password = "".join(random.sample(all, length))
     print(password)
-print('Done')
+print('####### Done ###############')
